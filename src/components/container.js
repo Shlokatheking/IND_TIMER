@@ -22,7 +22,7 @@ function Container(props){
         <Timer sendTime={getTime}  />
           </div>
           <div className="col-sm border border-primary">
-            One of three columns
+            
           </div>
         </div>
       </div>
