@@ -2,6 +2,8 @@ import React from "react";
 import Table from "./table";
 import Timer from './timer';
 
+import VisualScramble from "./visualScramble";
+
 function Container(props){
     function getTime(time)
     {
@@ -17,12 +19,12 @@ function Container(props){
           <div className="col-sm-2 border border-white overflow:auto"  style={{height:"82vh"}}>
           <Table stats={props.stats} clearSession={resetSession} />
           </div>
-          <div className="col-sm-8 border border-white d-flex justify-content-center align-items-center" style={{height:"82vh"}} >
+          <div className="col-sm-7 border border-white d-flex justify-content-center align-items-center" style={{height:"82vh"}} >
         
         <Timer sendTime={getTime}  />
           </div>
-          <div className="col-sm border border-primary">
-            
+          <div className="col-sm-3 border border-primary d-flex flex-column justify-content-end">
+          <VisualScramble />
           </div>
         </div>
       </div>

@@ -5,7 +5,8 @@ import Header from "./components/header"
 import React,{useState, useEffect} from 'react';
 import Scramble from './components/scramble';
 import Container from './components/container';
-import Modal from './components/modal';
+import ScrambleState from './context/ScrambleState';
+
 
 
 function App() {
@@ -49,12 +50,13 @@ function clearLocalStorage(){
   setSolve([])
 }
   return (
-    <React.Fragment>
-      {/* <Modal /> */}
+    <>
+    <ScrambleState> 
       <Header />
       <Scramble onGetScramble={getScramble}/>
       <Container sendTime={getTime} stats={solve} clearSession={clearLocalStorage} />
-    </React.Fragment>
+    </ScrambleState>
+    </>
   )
 
 }

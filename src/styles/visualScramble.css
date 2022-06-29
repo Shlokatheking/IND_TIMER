@@ -1,0 +1,215 @@
+:root {
+    --hei:1.1rem;
+   
+  }
+
+.container {
+
+    height: 29rem;
+    width: 29rem;
+  }
+  .upper{
+      margin-bottom: 0px;
+  }
+  
+  .vertical {
+    display: inline-flex;
+    flex-direction: column;
+  }
+  .upper{
+      height: var(--hei);
+  }
+  .lower{
+    height: var(--hei);
+}
+.middle{
+    height: var(--hei);
+}
+  
+  .white {
+    display: inline-flex;
+    flex-direction: row;
+  }
+  .layer1 {
+    border: 1.5px solid black;
+    height: var(--hei);
+    width: var(--hei);
+    display: inline-flex;
+  }
+  .layer2 {
+    border:1.5px solid black;
+    height: var(--hei);
+    width: var(--hei);
+    display: inline-flex;
+  }
+  .layer3 {
+    border: 1.5px solid black;
+    height: var(--hei);
+    width:var(--hei);
+    display: inline-flex;
+  }
+  #f00 {
+    background-color: rgb(30, 226, 56);
+  }
+  #f01 {
+    background-color: rgb(30, 226, 56);
+  }
+  #f02 {
+    background-color: rgb(30, 226, 56);
+  }
+  #f10 {
+    background-color: rgb(30, 226, 56);
+  }
+  #f11 {
+    background-color: rgb(30, 226, 56);
+  }
+  #f12 {
+    background-color: rgb(30, 226, 56);
+  }
+  #f20 {
+    background-color: rgb(30, 226, 56);
+  }
+  #f21 {
+    background-color: rgb(30, 226, 56);
+  }
+  #f22 {
+    background-color: rgb(30, 226, 56);
+  }
+  
+  #r00 {
+    background-color: red;
+  }
+  #r01 {
+    background-color: red;
+  }
+  #r02 {
+    background-color: red;
+  }
+  #r10 {
+    background-color: red;
+  }
+  #r11 {
+    background-color: red;
+  }
+  #r12 {
+    background-color: red;
+  }
+  #r20 {
+    background-color: red;
+  }
+  #r21 {
+    background-color: red;
+  }
+  #r22 {
+    background-color: red;
+  }
+  #b00 {
+    background-color: blue;
+  }
+  #b01 {
+    background-color: blue;
+  }
+  #b02 {
+    background-color: blue;
+  }
+  #b10 {
+    background-color: blue;
+  }
+  #b11 {
+    background-color: blue;
+  }
+  #b12 {
+    background-color: blue;
+  }
+  #b20 {
+    background-color: blue;
+  }
+  #b21 {
+    background-color: blue;
+  }
+  #b22 {
+    background-color: blue;
+  }
+  
+  #l00 {
+    background-color: orange;
+  }
+  #l01 {
+    background-color: orange;
+  }
+  #l02 {
+    background-color: orange;
+  }
+  #l10 {
+    background-color: orange;
+  }
+  #l11 {
+    background-color: orange;
+  }
+  #l12 {
+    background-color: orange;
+  }
+  #l20 {
+    background-color: orange;
+  }
+  #l21 {
+    background-color: orange;
+  }
+  #l22 {
+    background-color: orange;
+  }
+  #w00 {
+    background-color: white;
+  }
+  #w01 {
+    background-color: white;
+  }
+  #w02 {
+    background-color: white;
+  }
+  #w10 {
+    background-color: white;
+  }
+  #w11 {
+    background-color: white;
+  }
+  #w12 {
+    background-color: white;
+  }
+  #w20 {
+    background-color: white;
+  }
+  #w21 {
+    background-color: white;
+  }
+  #w22 {
+    background-color: white;
+  }
+  #bt00 {
+    background-color: yellow;
+  }
+  #bt01 {
+    background-color: yellow;
+  }
+  #bt02 {
+    background-color: yellow;
+  }
+  #bt10 {
+    background-color: yellow;
+  }
+  #bt11 {
+    background-color: yellow;
+  }
+  #bt12 {
+    background-color: yellow;
+  }
+  #bt20 {
+    background-color: yellow;
+  }
+  #bt21 {
+    background-color: yellow;
+  }
+  #bt22 {
+    background-color: yellow;
+  }
+ 
