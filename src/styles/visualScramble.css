@@ -1,5 +1,5 @@
 :root {
-    --hei:1.1rem;
+    --hei:2.1rem;
    
   }
 
@@ -13,8 +13,8 @@
   }
   
   .vertical {
-    display: inline-flex;
-    flex-direction: column;
+    /* display: inline-flex; */
+    /* flex-direction: column; */
   }
   .upper{
       height: var(--hei);
@@ -27,8 +27,8 @@
 }
   
   .white {
-    display: inline-flex;
-    flex-direction: row;
+    /* display: inline-flex;
+    flex-direction: row; */
   }
   .layer1 {
     border: 1.5px solid black;
@@ -47,6 +47,13 @@
     height: var(--hei);
     width:var(--hei);
     display: inline-flex;
+  }
+  .dummy{
+    height: var(--hei);
+    width:var(--hei);
+    display: inline-flex;
+    border: 0px;
+    background-color: rgb(39, 55, 70);
   }
   #f00 {
     background-color: rgb(30, 226, 56);

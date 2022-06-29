@@ -19,11 +19,11 @@ function Container(props){
           <div className="col-sm-2 border border-white overflow:auto"  style={{height:"82vh"}}>
           <Table stats={props.stats} clearSession={resetSession} />
           </div>
-          <div className="col-sm-7 border border-white d-flex justify-content-center align-items-center" style={{height:"82vh"}} >
+          <div className="col-sm-6 border border-white d-flex justify-content-center align-items-center" style={{height:"82vh"}} >
         
         <Timer sendTime={getTime}  />
           </div>
-          <div className="col-sm-3 border border-primary d-flex flex-column justify-content-end">
+          <div className="col-sm-4 border border-primary d-flex flex-column justify-content-end">
           <VisualScramble />
           </div>
         </div>

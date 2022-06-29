@@ -536,8 +536,26 @@ function VisualScramble() {
     <div className="container" id="boxx">
       <div className="cube">
         <div className="row mb-2">
-          <div className="sp col-2"></div>
-          <div className="orange col">
+            <div className="col-sm-12 d-flex flex-row">
+        <div className="orange m-1">
+            <div className="upper">
+              <div className="dummy"></div>
+              <div className="dummy"></div>
+              <div className="dummy"></div>
+            </div>
+            <div className="middle">
+              <div className="dummy"></div>
+              <div className="dummy"></div>
+              <div className="dummy"></div>
+            </div>
+            <div className="lower">
+              <div className="dummy"></div>
+              <div className="dummy"></div>
+              <div className="dummy"></div>
+            </div>
+          </div>
+
+          <div className="orange m-1">
             <div className="upper">
               <div className="layer1" id="w00" style={{backgroundColor:colors[topp[0][0]]}}></div>
               <div className="layer1" id="w01" style={{backgroundColor:colors[topp[0][1]]}}></div>
@@ -554,10 +572,11 @@ function VisualScramble() {
               <div className="layer3" id="w22" style={{backgroundColor:colors[topp[2][2]]}}></div>
             </div>
           </div>
+          </div>
         </div>
-        <div className="row mb-2" >
-          <div className="col-2">
-            <div className="orange">
+        <div className="row mb-2 " >
+          <div className="col-12 d-flex flex-row justify-content-start">
+            <div className="orange m-1">
               <div className="upper">
                 <div className="layer1" id="l00" style={{backgroundColor:colors[left[0][0]]}}></div>
                 <div className="layer1" id="l01" style={{backgroundColor:colors[left[0][1]]}}></div>
@@ -574,9 +593,7 @@ function VisualScramble() {
                 <div className="layer3" id="l22" style={{backgroundColor:colors[left[2][2]]}}></div>
               </div>
             </div>
-          </div>
-          <div className="col-2">
-            <div className="green">
+            <div className="green m-1">
               <div className="upper">
                 <div className="layer1" id="f00" style={{backgroundColor:colors[front[0][0]]}}></div>
                 <div className="layer1" id="f01"  style={{backgroundColor:colors[front[0][1]]}}></div>
@@ -593,9 +610,7 @@ function VisualScramble() {
                 <div className="layer3" id="f22" style={{backgroundColor:colors[front[2][2]]}}></div>
               </div>
             </div>
-          </div>
-          <div className="col-2">
-            <div className="red">
+            <div className="red m-1">
               <div className="upper">
                 <div className="layer1" id="r00" style={{backgroundColor:colors[right[0][0]]}}></div>
                 <div className="layer1" id="r01" style={{backgroundColor:colors[right[0][1]]}}></div>
@@ -612,9 +627,7 @@ function VisualScramble() {
                 <div className="layer3" id="r22" style={{backgroundColor:colors[right[2][2]]}}></div>
               </div>
             </div>
-          </div>
-          <div className="col-2">
-            <div className="blue">
+            <div className="blue m-1">
               <div className="upper">
                 <div className="layer1" id="b00" style={{backgroundColor:colors[back[0][0]]}}></div>
                 <div className="layer1" id="b01" style={{backgroundColor:colors[back[0][1]]}}></div>
@@ -632,10 +645,30 @@ function VisualScramble() {
               </div>
             </div>
           </div>
+
+
+
         </div>
         <div className="row">
-          <div className="col-2"></div>
-          <div className="col">
+
+          <div className="col-12 d-flex flex-row m-1">
+          <div className="orange m-1">
+            <div className="upper">
+              <div className="dummy"></div>
+              <div className="dummy"></div>
+              <div className="dummy"></div>
+            </div>
+            <div className="middle">
+              <div className="dummy"></div>
+              <div className="dummy"></div>
+              <div className="dummy"></div>
+            </div>
+            <div className="lower">
+              <div className="dummy"></div>
+              <div className="dummy"></div>
+              <div className="dummy"></div>
+            </div>
+          </div>
             <div className="yellow">
               <div className="upper">
                 <div className="layer1" id="bt00" style={{backgroundColor:colors[bottom[0][0]]}}></div>
