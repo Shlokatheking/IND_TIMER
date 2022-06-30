@@ -1,8 +1,8 @@
 import React from "react";
 import Table from "./table";
 import Timer from './timer';
-
 import VisualScramble from "./visualScramble";
+import AverageStats from "./averageStats";
 
 function Container(props){
     function getTime(time)
@@ -23,8 +23,9 @@ function Container(props){
         
         <Timer sendTime={getTime}  />
           </div>
-          <div className="col-sm-4 border border-primary d-flex flex-column justify-content-end">
-          <VisualScramble />
+          <div className="col-sm-4 border border-primary d-flex flex-column justify-content-between" style={{height:'82h'}}>
+            <AverageStats stats={props.stats} currAvg={props.currAvg} bestAvg={props.bestAvg} />
+            <VisualScramble />
           </div>
         </div>
       </div>

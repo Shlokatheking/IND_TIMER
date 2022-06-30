@@ -48,15 +48,60 @@ function getTime(time)
 function clearLocalStorage(){
   localStorage.clear()
   setSolve([])
+  setBestAvg(10000000.00)
 }
+
+
+let lastFive=[];
+let avg=0.0;
+const [bestAvg,setBestAvg]=useState(10000000.00)
+if(localStorage.getItem("bestAvg"!==null))
+setBestAvg(localStorage.getItem("bestAvg"))
+if(solve.length>=5)
+{
+    for(let i=solve.length-1;i>=solve.length-5;i--)
+    lastFive.push(solve[i].time);
+}
+
+lastFive.sort()
+if(lastFive.length)
+{
+
+for(let i=1;i<=3;i++)
+{
+    let stringTime=(lastFive[i].seconds).toString();
+
+   stringTime= stringTime.concat(".");
+   stringTime= stringTime.concat(lastFive[i].miliSeconds.toString());
+
+
+    stringTime=parseFloat(stringTime);
+    avg+=stringTime;
+
+}
+console.log(avg)
+avg/=3
+avg= Math.round((avg + Number.EPSILON) * 100) / 100
+console.log(avg)
+
+
+if(avg<bestAvg)
+{
+    setBestAvg(avg)
+    localStorage.setItem("bestAvg",bestAvg);
+}
+
+}
+console.log(bestAvg)
+
   return (
     <>
     <ScrambleState> 
       <Header />
       <Scramble onGetScramble={getScramble}/>
-      <Container sendTime={getTime} stats={solve} clearSession={clearLocalStorage} />
+      <Container sendTime={getTime} stats={solve} clearSession={clearLocalStorage} currAvg={avg} bestAvg={bestAvg} />
     </ScrambleState>
-    </>
+    </> 
   )
 
 }
